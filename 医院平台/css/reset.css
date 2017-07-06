@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,table,th,td,img,select { margin:0; padding:0; }
+body { background:#fff; color:#333; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#333; text-decoration:none; }
+a:hover { text-decoration:none; }
+img { border:none;max-width:100%; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif;border:none;outline:none; background:none;}
+table { border-collapse:collapse; }
+
+.cl:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.cl { *zoom:1; }
+.wp{width:1200px;margin:0 auto;max-width:100%;}
+.marbo{margin-bottom:30px;}
+.marle{margin-left:50px;}
+.padtop{padding-top:30px;}
+.text_center{text-align:center;}

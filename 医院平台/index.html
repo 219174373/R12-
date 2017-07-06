@@ -1,0 +1,825 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>医家预约挂号网官网</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"  href="img/yijia.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+	  <style>
+
+		  .nav_fixe{
+			  position: fixed;
+			  top: 0;
+			  z-index: 999;
+		  }
+
+	  </style>
+
+  </head>
+  <body>
+    <!-- 顶部 -->
+	<div id="top" class="wp">
+		<a href="#" title="医家网" class="pull-left"><img class="animated fadeInUp visible" alt="logo" src="img/logo1.png" data-animation="fadeInUp" data-animation-delay="400"></a>
+		<div class="wxbtn pull-right">
+		欢迎来到医家网！
+			<button class="btn btn-default" type="submit" data-toggle="modal" data-target="#sign">登录</button>
+			<button class="btn btn-default" type="submit" data-toggle="modal" data-target="#login">注册</button>
+			<span class="person">个人中心</span>
+		</div>
+	</div>
+	<!-- END -->
+	
+	<!--轮播广告-->
+	<div id="carousel-example-generic" class="carousel slide marbo" data-ride="carousel">
+	  <!-- 控制块 -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  </ol>
+	  <!-- 轮播图文-->
+	  <div class="carousel-inner">
+	    <div class="item active">
+	      <img src="img/slide_img_1.jpg" alt="...">
+	      <div class="carousel-caption">
+	       <h3>一家子一辈子的<strong>健康管家</strong></h3>
+	       <p>即时、 便捷、高效的预约挂号助手</p>
+	      </div>
+	    </div>
+	    <div class="item">
+	      <img src="img/slide_img_2.jpg" alt="...">
+	    </div>
+	    <div class="item">
+	      <img src="img/slide_img_3.jpg" alt="...">
+	    </div>
+	  </div>
+	</div>
+	<!-- END -->
+	
+	<!-- 导航 -->
+	<nav id="navbar-example2" class="navbar navbar-inverse" role="navigation">
+		<!-- 移动 -->
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+		      <span class="sr-only">Toggle navigation</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+	  	</div>
+	   	<!--桌面-->
+	   	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+	    	<ul class="nav navbar-nav center-block">
+		      <li><a href="#kuaisu">快速预约</a></li>
+		      <li><a href="#jingzhun">精准预约</a></li>
+		      <li><a href="#gonggao">公告栏</a></li>
+		      <li><a href="#zixun">健康资讯</a></li>
+		      <li><a href="#shequ">社区</a></li>
+	    	</ul>
+	   </div>
+	   <div id="test1" class="inline laydate-icon" style="width:150px;"></div>
+	</nav>
+	<!-- END -->
+	
+	<!-- 返回顶部 -->
+	<a href="#top" class="to_top fixedtop">
+		<span class="glyphicon glyphicon-chevron-up"></span>
+	</a>
+	<!-- END -->
+	
+	<!-- 主体内容 -->
+	<div id="main" data-spy="scroll" data-target="#navbar-example2">
+		<!--快速预约-->
+		<div id="kuaisu">
+			<div class="container">
+				<div class="row">
+					<div class="section-title animated" data-animation="fadeInUp" data-animation-delay="900">
+						<h2>快速预约</h2>
+						<div class="section-title-line animated" data-animation="fadeInUp" data-animation-delay="900" style="width: 661px;">
+							<div class="section-title-icon">
+								<img src="img/icon.png" alt="logo" width="50">
+							</div>
+							<hr>
+						</div>	
+					</div>
+					<div class="col-md-6 wxleft animated owl-theme" data-animation="fadeInLeft" data-animation-delay="1000">
+						<div class="kuaisu_block">
+							<h3 class="marbo">
+								<span class="glyphicon glyphicon-map-marker"></span>
+								<strong>四川</strong>成都
+							</h3>
+							<select class="form-control">
+							  <option selected="selected">请选择医院</option>
+							  <option>四川大学华西临床医学</option>
+							  <option>四川省人民医院</option>
+							  <option>中国人民解放军成都军区总医院</option>
+							  <option>成都中医药大学附属医院</option>
+							  <option>四川省骨科医院</option>
+							  <option>成都医学院第一附属医院</option>
+							  <option>四川大学华西第二医院</option>
+							  <option>成都市妇幼保健院</option>
+							</select>
+							<select class="form-control">
+							  <option selected="selected">请选择科室</option>
+							  <option>内科</option>
+							  <option>外科</option>
+							  <option>妇产科</option>
+							  <option>男科</option>
+							  <option>儿科</option>
+							  <option>骨科</option>
+							  <option>眼科</option>
+							  <option>耳鼻咽喉头颈科</option>
+							  <option>皮肤科</option>
+							  <option>肿瘤科</option>
+							  <option>精神科</option>
+							</select>
+							<div class="text_center marbo"><button type="button" class="btn btn-primary kuai">快速挂号</button></div>
+							<i>帮您快速挂号，省时又省心！</i>
+						</div>
+					</div>
+  					<div class="col-md-6 wxright animated owl-theme" data-animation="fadeInRight" data-animation-delay="1000">
+  						<h3 class="liucheng"><strong>如何</strong>网上预约挂号?</h3>
+	  					<img alt="" src="img/liucheng1.png">
+  					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end -->
+		
+		<!--精准预约-->
+		<div id="jingzhun" class="padtop">
+			<div class="section-title animated" data-animation="fadeInUp" data-animation-delay="700">
+				<h2>精准预约</h2>
+				<div class="section-title-line animated" data-animation="fadeInUp" data-animation-delay="900" style="width: 661px;">
+					<div class="section-title-icon">
+						<img src="img/icon.png" alt="logo" width="50">
+					</div>
+					<hr>
+				</div>	
+			</div>
+			<div class="duoxuan wp">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+				  <li class="active"><a href="#hospital" data-toggle="tab">选医院</a></li>
+				</ul>
+				
+				<!-- Tab panes -->
+				<div class="tab-content">
+				  <div class="tab-pane active fade in" id="hospital">
+					<div class="yiyuanxz_dh2">
+						<dl class="yiyuanxz_dh1_dl hosdengji">
+						<dt><span>医院等级</span><a id="HospitalLevel0" href="#" class="yiyuanxz_dt_all">全部</a></dt>
+							<dd>
+								<ul>
+								<li><a id="HospitalLevel3" href="javascript:void(0);">三级医院</a></li>
+								<li><a id="HospitalLevel2" href="javascript:void(0);">二级医院</a></li>
+								<li><a id="HospitalLevel1" href="javascript:void(0);">一级医院</a></li>
+								</ul>
+							</dd>						
+						</dl>
+						<dl class="yiyuanxz_dh1_dl hosweizhi">
+						<dt><span>医院位置</span><a id="HospitalLevel0" href="#" class="yiyuanxz_dt_all">全部</a></dt>
+							<dd>
+								<ul>
+								<li><a id="Hospitalwuhou" href="javascript:void(0);">武侯区</a></li>
+								<li><a id="Hospitalgaoxin" href="javascript:void(0);">高新区</a></li>
+								<li><a id="Hospitalqingyang" href="javascript:void(0);">青羊区</a></li>
+								<li><a id="Hospitaljinniu" href="javascript:void(0);">金牛区</a></li>
+								<li><a id="Hospitaljinjiang" href="javascript:void(0);">锦江区</a></li>
+								<li><a id="Hospitaljinjiang" href="javascript:void(0);">温江区</a></li>
+								<li><a id="Hospitaljinjiang" href="javascript:void(0);">新都区</a></li>
+								<li><a id="Hospitaljinjiang" href="javascript:void(0);">成华区</a></li>
+								<li><a id="Hospitaljinjiang" href="javascript:void(0);">龙泉驿区</a></li>
+								<li><a id="Hospitalqingbaijiang" href="javascript:void(0);">青白江区</a></li>
+								<li><a id="Hospitaljinjiang" href="javascript:void(0);">双流县</a></li>
+								<li><a id="Hospitaljinjiang" href="javascript:void(0);">金堂县</a></li>
+								<li><a id="Hospitaljinjiang" href="javascript:void(0);">新津县</a></li>
+								</ul>
+							</dd>						
+						</dl>
+						<dl class="yiyuanxz_dh1_dl hoskeshi">
+						<dt><span>医院科室</span><a id="HospitalLevel0" href="#" class="yiyuanxz_dt_all">全部</a></dt>
+							<dd>
+								<ul class="ksgh_c_nav">
+							<li><a href="javascript:void(0);"><span class="ksgh_aico1"></span>内科</a></li>
+							<li><a href="javascript:void(0);"><span class="ksgh_aico2"></span>外科</a></li>
+							<li><a href="javascript:void(0);"><span class="ksgh_aico3"></span>妇产科</a></li>
+							<li><a href="javascript:void(0);"><span class="ksgh_aico4"></span>男科</a></li>
+							<li><a href="javascript:void(0);"><span class="ksgh_aico5"></span>儿科</a></li>
+							<li><a href="javascript:void(0);"><span class="ksgh_aico6"></span>骨科</a></li>
+							<li><a href="javascript:void(0);"><span class="ksgh_aico7"></span>眼科</a></li>
+							<li><a href="javascript:void(0);"><span class="ksgh_aico8"></span>耳鼻咽喉头颈科</a></li>
+							<li><a href="javascript:void(0);"><span class="ksgh_aico9"></span>皮肤科</a></li>
+							<li><a href="javascript:void(0);"><span class="ksgh_aico10"></span>肿瘤科</a></li>
+							<li><a href="javascript:void(0);"><span class="ksgh_aico11"></span>精神科</a></li>
+						</ul>
+							</dd>						
+						</dl>
+					</div>
+					<div class="sanji"><span class="condition dengji" name="dengji"></span><span class="condition weizhi" name="weizhi"></span><span class="condition keshi" name="keshi"></span></div>
+				  	<button class="btn btn-primary search_yi" type="submit">搜索</button>
+					<div class="hospital">
+						 <div class="row">
+						  <a class="shouhui">>>收起</a>
+						  <div class="col-sm-6 col-md-4 animated" data-animation="swing" data-animation-delay="1000">
+						    <div class="thumbnail">
+						      <img data-src="holder.js/300x200" src="img/yiyuan.jpg" alt="...">
+						      <div class="caption">
+						        <h3>四川大学华西临床医学</h3>
+						        
+						        <p>地址：成都外南国学巷37号</p>
+						        <p>联系电话：028-85422120</p>
+						        					        
+						        <p class="yuyue"><a href="#" class="btn btn-default kuai" role="button">现在预约+</a></p>
+						      </div>
+						    </div>
+						  </div>
+						
+						 
+
+						</div>
+					</div>
+				  </div>
+				</div>
+			</div>		
+		</div>
+		<!-- end -->
+		
+		<!--最新公告-->
+		<div id="gonggao" class="padtop">
+			<div class="container">
+				<div class="row">
+					<div class="section-title animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="700">
+						<h2>最新公告</h2>
+						<div class="section-title-line animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="900" style="width: 661px;">
+							<div class="section-title-icon">
+								<img src="img/icon.png" alt="logo" width="50">
+							</div>
+							<hr>
+						</div>	
+					</div>
+					<div class="col-md-6 animated owl-theme fadeInLeft visible" data-animation="fadeInLeft" data-animation-delay="1000"><img alt="" src="img/news.png"></div>
+  					<div class="col-md-6 animated owl-theme fadeInRight visible pad_ri" data-animation="fadeInRight" data-animation-delay="1000">
+  						  <div class="panel-group" id="accordion">
+							  <div class="panel panel-default">
+							    <div class="panel-heading">
+							      <h4 class="panel-title">
+							        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+							          部分医院停止预约2016年04月05日号源的通知
+							        </a>
+							        <span class="pull-right newsDate">[2016-04-04]</span>
+							      </h4>
+							    </div>
+							    <div id="collapseOne" class="panel-collapse collapse">
+							      <div class="panel-body">
+								  	<p>
+								  	1.成都司法警官医院<br/>
+								  	2.成都市第一人民医院<br/>
+								  	3.四川省肿瘤医院<br/>
+								  	</p>
+							      </div>
+							    </div>
+							  </div>
+  							   <div class="panel panel-default">
+							    <div class="panel-heading">
+							      <h4 class="panel-title">
+							        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							          华西医科大学医院暂停更新号源通知
+							        </a>
+							        <span class="pull-right newsDate">[2016-03-06]</span>
+							      </h4>
+							    </div>
+							    <div id="collapseTwo" class="panel-collapse collapse">
+							      <div class="panel-body">
+								  	<p>由于华西医科大学医院放号周期调整，自3月7日起暂停更新号源，至6月9日起正常更新。对您造成的不便敬请谅解。
+特此通知。</p>
+							      </div>
+							    </div>
+							  </div>
+							   <div class="panel panel-default">
+							    <div class="panel-heading">
+							      <h4 class="panel-title">
+							        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							          成都军区总医院3月5日内科停诊通知
+							        </a>
+							        <span class="pull-right newsDate">[2016-03-04]</span>
+							      </h4>
+							    </div>
+							    <div id="collapseThree" class="panel-collapse collapse">
+							      <div class="panel-body">
+								  	<p>diyitiaoxinwen</p>
+							      </div>
+							    </div>
+							  </div>
+							   <div class="panel panel-default">
+							    <div class="panel-heading">
+							      <h4 class="panel-title">
+							        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+							          成都市第二人民医院号源发放通知
+							        </a>
+							        <span class="pull-right newsDate">[2016-02-18]</span>
+							      </h4>
+							    </div>
+							    <div id="collapseFour" class="panel-collapse collapse">
+							      <div class="panel-body">
+								  	<p>diyitiaoxinwen</p>
+							      </div>
+							    </div>
+							  </div>
+							  
+						</div>
+  					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end -->
+			
+		<!--健康资讯-->
+		<div id="zixun" class="padtop">
+			<div class="section-title animated" data-animation="fadeInUp" data-animation-delay="700">
+				<h2>健康资讯</h2>
+				<div class="section-title-line animated" data-animation="fadeInUp" data-animation-delay="900" style="width: 661px;">
+					<div class="section-title-icon">
+						<img src="img/icon.png" alt="logo" width="50">
+					</div>
+					<hr>
+				</div>	
+			</div>
+			<div class="zixun_pic cl">
+				<div class="special-gallery-item">
+					<div class="special-gallery-flow-effect">
+						<img src="img/zixun_1.jpg" alt="">
+						<div class="special-gallery-overlay">
+							<span class="glyphicon glyphicon-heart"></span>
+							<h3>吸烟男士不育机会高六倍</h3>
+							<div class="wx_text">
+								<p>
+									新加坡国立大学一个医疗研究小组，将生育能力正常与不育男士的精液样本作出分析后，得出一个结论——吸烟降低精子数量，令个别精子变弱。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="special-gallery-item">
+					<div class="special-gallery-flow-effect">
+						<img src="img/zixun_2.jpg" alt="">
+						<div class="special-gallery-overlay">
+							<span class="glyphicon glyphicon-heart"></span>
+							<h3>被忽视的药驾“元凶”</h3>
+							<div class="wx_text">
+								<p>
+									降压药使脑供血量减少，导致头晕，头晕常发生于服药数小时后，应避免该时段驾车。此外，晚上服药更易出现头晕症状，必要时咨询医生。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="special-gallery-item">
+					<div class="special-gallery-flow-effect">
+						<img src="img/zixun_3.jpg" alt="">
+						<div class="special-gallery-overlay">
+							<span class="glyphicon glyphicon-heart"></span>
+							<h3>什么是经前紧张综合征?</h3>
+							<div class="wx_text">
+								<p>
+									一些妇女在经前反复出现精神紧张、抑郁、情绪淡漠、失眠、乳房胀疼等一系列身体和精神症状，医学上把这种情况称为经前期综合征。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="special-gallery-item">
+					<div class="special-gallery-flow-effect">
+						<img src="img/zixun_4.jpg" alt="">
+						<div class="special-gallery-overlay">
+							<span class="glyphicon glyphicon-heart"></span>
+							<h3>有些药物不能碾碎吃</h3>
+							<div class="wx_text">
+								<p>
+									为了给宝宝喂药，不少家长都将药物碾碎，其实有些药物是不合适碾碎吃的，没有压痕的最好不要掰开，否则会影响到药效的发挥。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="special-gallery-item">
+					<div class="special-gallery-flow-effect">
+						<img src="img/zixun_5.jpg" alt="">
+						<div class="special-gallery-overlay">
+							<span class="glyphicon glyphicon-heart"></span>
+							<h3>夏天也要注意哮喘</h3>
+							<div class="wx_text">
+								<p>
+									环境污染、接触到染发、烫发或擦了化妆品的大人、气温忽高忽低、上呼吸道感染、贪凉饮冷都可能引起哮喘病的复发。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="special-gallery-item">
+					<div class="special-gallery-flow-effect">
+						<img src="img/zixun_6.jpg" alt="">
+						<div class="special-gallery-overlay">
+							<span class="glyphicon glyphicon-heart"></span>
+							<h3>确保每年一次的体检</h3>
+							<div class="wx_text">
+								<p>
+									体检能够在疾病仍处于可以治疗的阶段及早确诊。无论是涂片检查、血压测试或是乳房X光造影检查，都应引起足够的重视。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="special-gallery-item">
+					<div class="special-gallery-flow-effect">
+						<img src="img/zixun_7.jpg" alt="">
+						<div class="special-gallery-overlay">
+							<span class="glyphicon glyphicon-heart"></span>
+							<h3>如何正确的刷牙？</h3>
+							<div class="wx_text">
+								<p>
+									每天刷牙两次，每个牙面都要刷，牙刷斜45度，放在牙齿和牙龈交界的地方，左右轻轻震颤。每次最少两分钟。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="special-gallery-item">
+					<div class="special-gallery-flow-effect">
+						<img src="img/zixun_8.jpg" alt="">
+						<div class="special-gallery-overlay">
+							<span class="glyphicon glyphicon-heart"></span>
+							<h3>掌握家族病史</h3>
+							<div class="wx_text">
+								<p>
+									对家族成员的健康史有清晰的了解，可以预测自己未来的健康状况，因为多种疾病都与遗传有关，特别是心脏病和癌症。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- end -->
+		
+		<!--社区-->
+		<div id="shequ" class="padtop marbo">
+			<div class="section-title animated" data-animation="fadeInUp" data-animation-delay="700">
+				<h2>用户社区</h2>
+				<div class="section-title-line animated" data-animation="fadeInUp" data-animation-delay="900" style="width: 661px;">
+					<div class="section-title-icon">
+						<img src="img/icon.png" alt="logo" width="50">
+					</div>
+					<hr>
+				</div>	
+			</div>
+			<div class="pinglun container">
+				<div class="row">
+				  <div class="col-xs-6 col-sm-6 col-md-4">
+				  		<div class="touxiang pull-left animated" data-animation="rotateIn" data-animation-delay="700"><img alt="" src="img/tou3.jpg"></div>
+				  		<div class="comment pull-left">
+				  			<p>绝地反击高V和技术VHF,健身房的胡歌和机顶盒风华谷如果哈萨克福建省口附近</p>
+				  			<div class="info_date">
+				  				<span class="ping_doctor">就诊医院：<i>华西医院</i></span><br/>
+				  				<span class="glyphicon glyphicon-time"></span><i class="ping_time">2016/3/4</i>
+				  				<span class="glyphicon glyphicon-eye-open"></span><i class="ping_see">2000</i>
+				  			</div>
+				  		</div>
+				  </div>
+				  <div class="col-xs-6 col-sm-6 col-md-4">
+				  		<div class="touxiang pull-left animated" data-animation="rotateIn" data-animation-delay="700"><img alt="" src="img/tou3.jpg"></div>
+				  		<div class="comment pull-left">
+				  			<p>绝地反击高V和技术VHF</p>
+				  			<div class="info_date">
+				  				<span>就诊医院：</span><i class="ping_doctor">第一人民医院</i><br>
+				  				<span class="glyphicon glyphicon-time"></span><i class="ping_time">2016/3/4</i>
+				  				<span class="glyphicon glyphicon-eye-open"></span><i class="ping_see">2000</i>
+				  			</div>
+				  		</div>
+				  </div>
+				  <div class="col-xs-6 col-sm-6 col-md-4"></div>
+				  <div class="col-xs-6 col-sm-6 col-md-4"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end -->	
+	</div>
+	<!-- END -->
+	
+	<!-- 底部 -->
+	<div id="footer">
+		<div class="wp footerin">
+			<a href="#" title="医家网"><img alt="logo" src="img/logo1.png"></a>
+			
+		</div>
+		<p>Copyright &copy; YIJIA Of ChengDu Hospital</p>
+	</div>
+	<!-- END -->
+	
+	<!--登录弹框 -->
+	<div class="modal fade denglu" id="sign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">用户登录</h4>
+      </div>
+      <div class="modal-body cl">
+        <div class="pull-left">
+        	<img alt="" src="img/denglu.jpg">
+        </div>
+        <div class="pull-left marle">
+        	<form class="form-horizontal" role="form">
+  				<div class="form-group">
+   				 <label for="inputUserName" class="col-sm-2 control-label">用户名：</label>
+    			 <div class="col-sm-10 pull-left">
+     				 <input type="text" class="form-control" id="inputUserName" placeholder="请输入真实姓名/手机号">
+    			 </div>
+  				</div>
+ 				<div class="form-group">
+    				<label for="inputPassword3" class="col-sm-2 control-label">密码:</label>
+    				<div class="col-sm-10">
+      					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    				</div>
+  				</div>
+			</form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">登录</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- END -->
+	
+	<!-- 注册弹框 -->
+	<div class="modal fade zhuce" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">注册账户</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" role="form">
+  				<div class="form-group">
+   				 <label for="inputName" class="col-sm-2 control-label">姓名：</label>
+    			 <div class="col-sm-10">
+     				 <input type="text" class="form-control" id="inputName" placeholder="Name">
+    			 </div>
+  				</div>
+ 				<div class="form-group">
+    				<label for="setPassword" class="col-sm-2 control-label">设置密码:</label>
+    				<div class="col-sm-10">
+      					<input type="password" class="form-control" id="setPassword" placeholder="Password">
+    				</div>
+  				</div>
+  				<div class="form-group">
+    				<label for="rePassword" class="col-sm-2 control-label">确认密码:</label>
+    				<div class="col-sm-10">
+      					<input type="password" class="form-control" id="rePassword" placeholder="Password">
+    				</div>
+  				</div>
+  				<div class="form-group">
+    				<label for="phoneNumber" class="col-sm-2 control-label">手机号码:</label>
+    				<div class="col-sm-10">
+      					<input type="text" class="form-control" id="phoneNumber" placeholder="phone">
+    				</div>
+  				</div>
+			</form>
+      </div>
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-primary">注册</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+	<!-- END -->
+	
+	<!--个人中心-->
+	<div class="modal fade geren" id="personal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <img alt="" src="img/tou1.jpg">
+        <span class="modal-title" id="myModalLabel">王新</span>
+      </div>
+      <div class="modal-body">
+        <!-- Nav tabs -->
+		<ul class="nav nav-tabs">
+		  <li><a href="#dingdan" data-toggle="tab">挂号订单</a></li>
+		  <li><a href="#pinglun" data-toggle="tab">待点评</a></li>
+		</ul>
+		
+		<!-- Tab panes -->
+		<div class="tab-content">
+		  <div class="tab-pane active" id="dingdan">
+		  	<table class="dingdan">
+		  		<tr><th class="td1">就诊医院</th><th>就诊时间</th><th>取消挂号</th></tr>
+		  		<tr><td class="td1"><a href="http://www.cd120.com/">四川大学华西临床医学</a></td><td>2016-05-14</td><td><a href="#">取消</a></td></tr>
+		  	</table>
+		  </div>
+		  <div class="tab-pane" id="pinglun">
+		  	<ul>
+		  		<li>
+		  			<div class="jilu">
+		  				<span>四川大学华西临床医学</span>&gt;
+		  				<a>我要评论</a>
+		  			</div>
+		  			<div class="ping_text">
+		  				<textarea rows="3" cols="50"></textarea>
+		  				<button type="button" class="btn btn-primary">发表</button>
+		  			</div>
+		  		</li>
+
+		  	</ul>
+		  </div>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+	<!-- END -->
+	
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+    	//固定定位
+    	var nav=$(".navbar"); //得到导航对象
+    	var top=$(".to_top");
+    	var win=$(window); //得到窗口对象
+    	var sc=$(document);//得到document文档对象。
+    	win.scroll(function(){
+    	  if(sc.scrollTop()>=590){
+    	    nav.addClass("fixednav");
+    	  }else{
+    	   nav.removeClass("fixednav");
+    	  }
+
+    	  if(sc.scrollTop()>=590){
+      	    top.addClass("fixedtop");
+      	  $(".to_top").fadeIn();
+      	  }else{
+      	   top.removeClass("fixedtop");
+      	   $(".to_top").fadeOut();
+      	  }
+    	  animated($("#kuaisu .section-title"),"fadeInUp");
+    	  animated($("#kuaisu .wxleft"),"fadeInLeft");
+    	  animated($("#kuaisu .wxright"),"fadeInRight");
+    	  animated($("#jingzhun .section-title"),"fadeInUp");
+    	  animated($("#gonggao .section-title"),"fadeInUp");
+    	  animated($("#zixun .section-title"),"fadeInUp");
+    	  animated($("#shequ .section-title"),"fadeInUp");
+    	});
+    	//滚动监听
+    	$('body').scrollspy({ target: '#navbar-example2' });
+
+		//显示个人中心
+		$(".person").click(
+		function(){
+			$(".wxbtn button").css("display","none");
+			$(".geren").css("display","block");
+			$(".geren.modal").css({"overflow":"visible","top":"80px"});
+			$(".geren.fade").css("opacity","1");
+		});
+
+		//关闭个人中心
+		$(".modal-header .close,.modal-footer button").click(function(){
+			$(".geren").removeAttr("style");
+		});
+
+    	//滚动动画
+    	function animated(obj,dong){
+    		if(sc.scrollTop()>=obj.offset().top-100){
+    			obj.addClass(dong);
+    			obj.addClass("visible");
+    			obj.find(".animated").addClass(dong);
+      			obj.find(".animated").addClass("visible");
+    		}
+    		else{
+    			obj.removeClass(dong);
+    			obj.removeClass("visible");
+    			obj.find(".animated").removeClass("visible");
+    			obj.find(".animated").removeClass(dong);
+    		}
+    	};
+    	$(".kuai").click(
+		function(){alert("恭喜您，预约成功");}
+		);
+
+		//三层筛选
+		$(".hosdengji a").each(function(index){
+			$(this).click(
+				function(){
+					var contain=$(this).text();
+					$(".dengji").html(contain+'<a href="javascript:void(0);">'+"x"+'</a>');
+					if($(".dengji a")){
+						$(".dengji a").click(
+							function(){
+								$(this).parent().html("");
+							});
+					}
+				}
+			);
+		});
+		$(".hosweizhi a").each(function(index){
+			$(this).click(
+				function(){
+					var contain=$(this).text();
+					$(".weizhi").html(contain+'<a href="javascript:void(0);">'+"x"+'</a>');
+					if($(".weizhi a")){
+						$(".weizhi a").click(
+							function(){
+								$(this).parent().html("");
+							});
+					}
+				}
+			);
+		});
+		$(".hoskeshi a").each(function(index){
+			$(this).click(
+				function(){
+					var contain=$(this).text();
+					$(".keshi").html(contain+'<a href="javascript:void(0);">'+"x"+'</a>');
+					if($(".keshi a")){
+						$(".keshi a").click(
+							function(){
+								$(this).parent().html("");
+							});
+					}
+				});
+		});
+
+    	//按医院搜索
+    	$(".search_yi").click(function(){
+    		$(".hospital").css("display","block");
+    		$(".hospital").find(".col-sm-6.col-md-4").addClass("swing visible");
+    	});
+    	$(".shouhui").click(function(){
+    		$(".hospital").css("display","none");
+    	});
+
+    	//评论头像
+    	$("#shequ .touxiang").mouseover(function(){
+    		$(this).addClass("rotateIn visible");
+    	});
+    	$("#shequ .touxiang").mouseout(function(){
+    		$(this).removeClass("rotateIn visible");
+    	});
+    	})
+
+    	//点评
+    	$(".jilu a").each(function(index){
+    		$(this).click(function(){
+    			$(".ping_text").eq(index).css("display","block");
+    		});
+
+    	});
+
+
+		$(window).scroll(
+				function(){
+
+					//垂直滚动条滚动的距离
+					var a=$(window).scrollTop();
+//					console.log(a);
+					if(a>=540){
+
+						$(".navbar-collapse").addClass("nav_fixe")
+
+					}
+
+					if(a<=500){
+
+						$(".navbar-collapse").removeClass("nav_fixe")
+
+					}
+
+
+				}
+		)
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

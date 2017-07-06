@@ -1,0 +1,417 @@
+    /* 公共部分 */
+    body{
+        min-width:980px;
+    }
+    .container{
+        width: 978px;
+        margin:0 auto;
+        position:relative;
+        font-size:.75em;
+    }
+    .warpper{
+        width:100%;
+        overflow: hidden;
+    }
+    /* 添加字体部分 */
+    @font-face {
+        font-family: 'ColaborateThinRegular';
+        src: url('../fonts/colabthi-webfont.eot');
+        src: local('O'), url('../fonts/colabthi-webfont.woff') format('woff'), url('../fonts/colabthi-webfont.ttf') format('truetype'), url('../fonts/colabthi-webfont.svg#webfontBuy3ZjAx') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'ColaborateBoldRegular';
+        src: url('../fonts/colabbol-webfont.eot');
+        src: local('O'), url('../fonts/colabbol-webfont.woff') format('woff'), url('../fonts/colabbol-webfont.ttf') format('truetype'), url('../fonts/colabbol-webfont.svg#webfonti43fy0NT') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'CalibriBold';
+        src: url('../fonts/calibrib-webfont.eot');
+        src: local('O'), url('../fonts/calibrib-webfont.woff') format('woff'), url('../fonts/calibrib-webfont.ttf') format('truetype'), url('../fonts/calibrib-webfont.svg#webfontbOpCiIlZ') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'ColaborateBoldRegular';
+        src: url('../fonts/colabbol-webfont.eot');
+        src: local('O'), url('../fonts/colabbol-webfont.woff') format('woff'), url('../fonts/colabbol-webfont.ttf') format('truetype'), url('../fonts/colabbol-webfont.svg#webfonti43fy0NT') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ColaborateRegular';
+        src: url('../fonts/colabreg-webfont.eot');
+        src: local('O'), url('../fonts/colabreg-webfont.woff') format('woff'), url('../fonts/colabreg-webfont.ttf') format('truetype'), url('../fonts/colabreg-webfont.svg#webfontdC3uTxCK') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* header部分开始 */
+    /* header-top */
+    header .header-top{
+        padding:7px 0 10px 0;
+    }
+    header h1 a{
+        height:45px;
+        background: url("../images/logo.png") 0 0 no-repeat;
+        font-family:"ColaborateThinRegular";
+        font-weight: normal;
+        font-size:2em;
+        text-indent: 38px;
+        line-height:1.4em;
+        color:white;
+        float:left;
+    }
+    header h1 strong{
+        font-family: 'ColaborateBoldRegular';
+    }
+    header nav{
+        float:right;
+    }
+    header nav li{
+        float:left;
+    }
+    header nav li a{
+        display: inline-block;
+        /*width:87px;*/
+        height:32px;
+        /*border:1px solid white;*/
+        border-radius:17px;
+        padding: 0 36px 0 10px;
+        font-size:14px;
+        color:white;
+        line-height:32px;
+    }
+    header nav li a:hover{
+        background-image: -moz-linear-gradient(top, #ee3c09, #b90a09);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #ee3c09),color-stop(1, #b90a09));
+    }
+    header nav li a span{
+        position:relative;
+        right:-20px;
+    }
+    header .header-down{
+        padding: 10px 0 8px 0;
+    }
+    /* header-down */
+    header .header-down{
+        overflow: hidden;
+        background: #f9f9f9;
+        padding: 10px 0 8px 0;
+    }
+    header .header-down h5{
+        float:left;
+        color: #212121;
+        font-weight:normal;
+        padding: 5px 0 0 15px;
+    }
+    header .header-down #search-form{
+        display: block;
+        float:right;
+    }
+    header .header-down #search-form .input-text{
+        width:240px;
+        height:24px;
+        border:none;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, .2) 2px 2px 2px inset;
+        -webkit-box-shadow: rgba(0, 0, 0, .2) 2px 2px 2px inset;
+        padding:0 10px;
+    }
+    header .header-down #search-form .input-submit{
+        position:absolute;
+        top:8px;
+        right:0px;
+    }
+    /* header部分结束 */
+    /* 主体部分开始 */
+    /* 主体上面部分 */
+    main .top{
+        background: #fff;
+        padding: 50px 0 35px 0;
+    }
+    /* 图片轮播图 */
+    main .top .pics{
+        float: left;
+        width: 582px;
+        height: 384px;
+        overflow: hidden;
+        position:relative;
+    }
+    .pic{
+        width: 582px;
+        height: 384px;
+        margin-left:36px;
+        position:relative;
+    }
+    .pic img {
+        display:block !important;
+        position:absolute;
+        width:  495px;
+        height: 329px;
+        top:  0;
+        left: 0;
+        border:5px solid #fff;
+        border-radius:2px;
+        -moz-border-radius:2px;
+        -webkit-border-radius:2px;
+        box-shadow:0 0 3px rgba(0, 0, 0, .2);
+        -moz-box-shadow:0 0 3px rgba(0, 0, 0, .2);
+        -webkit-box-shadow:0 0 3px rgba(0, 0, 0, .2);
+    }
+    .pic img:nth-child(2) {
+        -moz-transform: rotate(2.5deg);
+        -o-transform: rotate(2.5deg);
+        -webkit-transform: rotate(2.5deg);
+    }
+    .pic img:nth-child(3) {
+        -moz-transform: rotate(-2.5deg);
+        -o-transform: rotate(-2.5deg);
+        -webkit-transform: rotate(-2.5deg);
+    }
+    .pic img:nth-child(4) {
+        -moz-transform: rotate(3.5deg);
+        -o-transform: rotate(3.5deg);
+        -webkit-transform: rotate(3.5deg);
+    }
+    .pic img:nth-child(5) {
+        -moz-transform: rotate(-3.5deg);
+        -o-transform: rotate(-3.5deg);
+        -webkit-transform: rotate(-3.5deg);
+    }
+    /*轮播按钮*/
+    .pics #prev{
+        position: absolute;
+        left: 0;
+        top: 154px;
+        z-index: 1;
+        background: url(../images/prev.png) no-repeat 0 0;
+        width: 83px;
+        height: 45px;
+    }
+    .pics #next{
+        position: absolute;
+        right: 0;
+        top: 154px;
+        z-index: 1;
+        background: url(../images/next.png) no-repeat 0 0;
+        width: 83px;
+        height: 45px;
+    }
+    /* 介绍部分 */
+    .intro .inner h2{
+        font-size: 48px;
+        color: #06cbe2;
+        line-height: 40px;
+        font-family: 'CalibriBold';
+        font-weight: normal;
+        margin-bottom: 25px;
+    }
+    .intro .inner h2 span{
+        font-family: 'ColaborateThinRegular';
+        color: #303030;
+        display: block;
+    }
+    .intro .inner p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        line-height: 1.5em;
+        color: #9f9f9f;
+
+    }
+    .intro .inner a{
+        display: inline-block;
+        background: url(../images/extra-button.jpg) no-repeat 0 0;
+        width: 195px;
+        height: 73px;
+        margin: 35px 0 0 -10px;
+        line-height: 49px;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        text-indent: 30px;
+        text-shadow: 1px 1px 0 #a61607;
+
+    }
+    .intro .inner a:hover{
+        text-shadow: 2px 2px 0 #a61607;
+    }
+    /* 主体中间部分 */
+    main .middle{
+        border-top: 6px solid #f4f4f4;
+        background: #f9f9f9;
+        padding: 44px 0 50px 0;
+    }
+    /* 中间左侧部分 */
+    .middle .middle-left{
+        width: 222px;
+        border:1px solid #fff;
+        float:left;
+        margin-right: 30px;
+    }
+    .middle .middle-left .menu{
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+        -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+        border: 1px solid #fff;
+        border-radius: 8px;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        background-image: -moz-linear-gradient(top, #fcfcfc, #f4f4f4);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #f4f4f4),color-stop(1, #fcfcfc));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f4f4f4');
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f4f4f4')";
+        margin-bottom: 3px;
+    }
+    .middle .middle-left li {
+        border-bottom: 1px solid #ebeae8;
+    }
+    .middle-left .menu li a{
+        position: relative;
+        display: block;
+        padding: 12px 0 11px 20px;
+        font-size: 16px;
+        color: #000;
+        text-decoration: none;
+        font-family: 'ColaborateThinRegular';
+        font-size-adjust: 0.49;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+    }
+    .middle-left .menu li a:hover{
+        background-image: -moz-linear-gradient(top, #ee3c09, #b90909);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #ee3c09),color-stop(1, #b90909));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee3c09', endColorstr='#b90909');
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee3c09', endColorstr='#b90909')";
+        color: #fff;
+        box-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        -webkit-border-top-right-radius: 20px;
+        -moz-border-radius-topright: 20px;
+        border-top-right-radius: 20px;
+        -webkit-border-bottom-right-radius: 20px;
+        -moz-border-radius-bottomright: 20px;
+        border-bottom-right-radius: 20px;
+        margin-right: -12px;
+    }
+    /* 中间右侧部分 */
+    .middle-right h2{
+        font-size: 36px;
+        line-height: 30px;
+        color: #303030;
+        font-weight: normal;
+        font-family: 'ColaborateRegular';
+        font-weight: normal;
+        margin-bottom: .7em;
+    }
+    .middle-right p{
+        font-size: 100%;
+        line-height: 1.5em;
+        color: #9f9f9f;
+        margin-bottom: 1.5em;
+    }
+    .middle-right p a{
+        background: url(../images/arrow2.gif) no-repeat 100% 5px;
+        padding-right: 17px;
+        font-weight: bold;
+        color: #f24c15;
+    }
+    .middle-right .images figure{
+        border: 5px solid #fff;
+        border-radius: 8px;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        float: left;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+        margin: 5px 11px 0 0;
+    }
+    .middle-right .images figure img:hover{
+        opacity:0.3;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+    }
+    /* 主体下面部分 */
+     main .bottom{
+        height:215px;
+        border-top: 6px solid #171717;
+        background: url(../images/content-pattern.gif) #212121;
+        padding: 30px 0 40px 0;
+        color: #5c5c5c;
+        overflow: hidden;
+    }
+    .bottom .data,.quick,.downloads{
+        float:left;
+        width:222px;
+        /*margin:0 30px 0 0;*/
+    }
+    .bottom li{
+        padding-bottom: 10px;
+    }
+    .bottom h3{
+        font-size: 18px;
+        line-height: 1.2em;
+        font-family: 'ColaborateRegular';
+        font-weight: normal;
+        color: #fff;
+        margin-bottom: 1em;
+    }
+    .bottom .data a{
+        color: #06cbe2;
+    }
+    .bottom .data a:hover{
+        color: #fff;
+        text-decoration: underline;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+    }
+    .bottom .quick a,.downloads a{
+        color: #5c5c5c;
+    }
+    .bottom li a:hover{
+        color: #fff;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+    }
+    /* 主体部分结束 */
+    /* 页脚部分开始 */
+    footer{
+        background: #1D1C1C;
+        color:#fff;
+        padding: 16px 0 16px 0;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+    }
+    footer p{
+        float:left;
+    }
+    footer .phone{
+        float:right;
+        font-style: normal;
+    }
+    footer .phone strong{
+        font-family: 'ColaborateBoldRegular';
+        font-weight: normal;
+        font-size:1.2em;
+        color: #e83709;
+    }
+    /* 页脚部分结束 */
+
+
+
+
+
+
+
+
